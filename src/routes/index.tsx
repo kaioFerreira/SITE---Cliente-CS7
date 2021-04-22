@@ -1,5 +1,6 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
+import Route from './Route';
 
 import Home from '../pages/Home';
 import FaleConosco from '../pages/Fale-Conosco';
@@ -15,6 +16,16 @@ import ProdutoConjunto from '../pages/Produto/Conjunto';
 import ProdutoDolmas from '../pages/Produto/Dolmas';
 import ProdutoUniformeEsportivo from '../pages/Produto/Uniforme';
 import ProdutoJalecos from '../pages/Produto/Jalecos';
+
+import { Dashboard } from '../pages/Dashboard';
+import { Reports } from '../pages/Dashboard/Reports';
+import { Leads } from '../pages/Dashboard/Leads';
+import { PendingLeads } from '../pages/Dashboard/PendingLeads';
+import ThanksPage from '../pages/Dashboard/ThanksPage';
+import SignIn from '../pages/Dashboard/SignIn';
+import SignUp from '../pages/Dashboard/SignUp';
+import ForgotPassword from '../pages/Dashboard/ForgotPassword';
+import ResetPassword from '../pages/Dashboard/ResetPassword';
 
 const Routes: React.FC = () => (
     <Switch>
@@ -32,6 +43,16 @@ const Routes: React.FC = () => (
         <Route path="/Produtos/Jalecos" component={ProdutoJalecos}/>
         <Route path="/Clientes"component={Clientes}/>
         <Route path="/Fale-Conosco"component={FaleConosco}/>
+
+        <Route path="/Obrigado" component={ThanksPage}/>
+        <Route path="/SignIn" component={SignIn}/>
+        <Route path="/SignUp" component={SignUp}/>
+        <Route path="/ForgotPassword" component={ForgotPassword} />
+        <Route path="/ResetPassword" component={ResetPassword}/>
+        <Route path="/Dashboard" component={Dashboard} isPrivate/>
+        <Route path="/Reports" component={Reports} isPrivate/>
+        <Route path="/Leads" component={Leads} isPrivate/>
+        <Route path="/PendingLeads" component={PendingLeads} isPrivate/>
     </Switch>
 );
 

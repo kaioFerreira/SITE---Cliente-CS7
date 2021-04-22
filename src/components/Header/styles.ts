@@ -6,6 +6,8 @@ export const  Container = styled.nav`
     @media(max-width: 800px) {
         img {
             margin-left: 0 !important;
+            width: 100px;
+            margin-bottom: 10px;
         }
         position: static;
 
@@ -154,5 +156,17 @@ export const  Container = styled.nav`
         &:hover {
             background: ${shade(0.2, '#004aad')};
         }
+    }
+`;
+
+export const WhatsApp = styled.div`
+    position: fixed;
+
+    right: 0.9rem;
+    bottom: 0.9rem;
+
+    img {
+        width: 5rem;
+        height: 5rem;
     }
 `;

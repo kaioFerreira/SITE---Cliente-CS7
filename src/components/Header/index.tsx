@@ -1,9 +1,10 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, WhatsApp } from './styles';
 import { Link } from 'react-router-dom';
 import { FaPhoneAlt } from 'react-icons/fa';
 
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/logo_original.png';
+import IconWhatsapp from '../../assets/icon-whatsapp2.png';
 
 const Header: React.FC = () => (
     <>
@@ -32,6 +33,12 @@ const Header: React.FC = () => (
                 <FaPhoneAlt size="20"/>
                 LIGAMOS PARA VOCÊ
             </Link>
+
+            <WhatsApp>
+                <a href='https://api.whatsapp.com/send?phone=5562982044749&text=Ol%C3%A1%20eu%20vi%20o%20seu%20anuncio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es...' >
+                    <img src={IconWhatsapp} alt="WhatsApp"/>
+                </a>
+            </WhatsApp>
         </Container>
     </>
 );

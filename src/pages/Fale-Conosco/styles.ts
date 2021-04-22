@@ -40,7 +40,6 @@ export const Orcamento = styled.div`
                 }
 
                 &::placeholder {
-                    color: ${shade(0.2, '#004aad')};
                     font-size: 16px;
                 }
             }
@@ -49,7 +48,7 @@ export const Orcamento = styled.div`
                 width: 100%;
                 height: 40px;
                 border-radius: 10px;
-                border: 2px solid #FFF;
+                border: 0px;
 
                 padding: 16px;
                 display: flex;
@@ -59,17 +58,7 @@ export const Orcamento = styled.div`
                     margin-top: 8px;
                 }
 
-                &:focus {
-                    border: 2px solid #0468ed;
-                    &::placeholder {
-                        color: #0468ed;
-                    }
-                }
 
-                &::placeholder {
-                    color: ${shade(0.2, '#004aad')};
-
-                }
             }
 
             button {
