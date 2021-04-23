@@ -22,7 +22,7 @@ import {
 import { FormHandles } from '@unform/core';
 import { api } from '../../services/api';
 import Input from '../../components/Input';
-import { FiPhone, FiUser } from 'react-icons/fi';
+import { FiHome, FiMail, FiPhone, FiUser } from 'react-icons/fi';
 interface LandingPageFormData {
     company: string;
     name: string;
@@ -116,10 +116,10 @@ const FaleConosco: React.FC = () => {
                              e rápida preenchendo o formulário abaixo. <br/><br/>
                              Depois de enviar as informações, nós entraremos em contato o mais breve possível!
                         </p>
-                        <Input primaryColor={'#004aad'} secondColor={'#FFF'} icon={FiUser}  name="name" placeholder="Nome da empresa"/>
+                        <Input primaryColor={'#004aad'} secondColor={'#FFF'} icon={FiHome}  name="name" placeholder="Nome da empresa"/>
                         <Input primaryColor={'#004aad'} secondColor={'#FFF'} icon={FiUser} name="company" placeholder="Nome do responsável pela cotação"/>
                         <Input primaryColor={'#004aad'} secondColor={'#FFF'} icon={FiPhone} mask="phone" name="phone" placeholder="Telefone"/>
-                        <Input primaryColor={'#004aad'} secondColor={'#FFF'} icon={FiUser} type="email" name="email" placeholder="Seu melhor e-mail"/>
+                        <Input primaryColor={'#004aad'} secondColor={'#FFF'} icon={FiMail} type="email" name="email" placeholder="Seu melhor e-mail"/>
                         <textarea ref={inputRef} onKeyUp={handleKeyUp} name="description" placeholder="Descreva seu orçamento: Modelo, quantidade, cor etc..."/>
 
                         <button type="submit">ENVIAR</button>
