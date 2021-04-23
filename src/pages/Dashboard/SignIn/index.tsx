@@ -50,7 +50,7 @@ const SignIn: React.FC = () => {
             });
 
             // const ENDPOINT = "http://localhost:3333";
-            const ENDPOINT = "https://nodedeploy.lctorres.com.br";
+            const ENDPOINT = "https://nodedeploy.camargosesantosuniformes.com.br";
             const socket = socketIOClient(ENDPOINT, {transports: ['websocket']});
             socket.on("message", (name: string)  => {
                 addToast({
