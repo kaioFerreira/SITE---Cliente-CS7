@@ -51,6 +51,7 @@ export const Container = styled.div<ContainerProps>`
         flex: 1;
         background: ${ (props) => props.secondColor};
         border: 0;
+        color: #FFF;
 
         &::placeholder {
             color: #666360;

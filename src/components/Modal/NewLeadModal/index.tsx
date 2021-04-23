@@ -109,7 +109,7 @@ export function NewLeadModal({isOpen, onRequestClose}: NewLeadModalProps) {
         className="react-modal-content">
 
             <button type="button" onClick={onRequestClose} className="react-modal-close">
-                <img src={IconCloneModal} alt="Fechal Cadastro de Lead"/>
+                <img src={IconCloneModal} alt="Close"/>
             </button>
             <Container>
                 <Form ref={formRef} onSubmit={handleSubmit}>
