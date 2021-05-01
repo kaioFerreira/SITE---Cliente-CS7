@@ -17,8 +17,8 @@ const FaleConosco: React.FC = () => {
         <>
             <Header/>
             <Helmet>
-                <script>
-                gtag('event', 'conversion', {'send_to': 'AW-376107740/9AIcCNeYs40CENzlq7MB'});
+                <script type="text/javascript">
+                gtag('event', 'conversion', ['send_to': 'AW-376107740/9AIcCNeYs40CENzlq7MB']);
                 </script>
             </Helmet>
             <PageTitle>ORÇAMENTO ENVIADO</PageTitle>
